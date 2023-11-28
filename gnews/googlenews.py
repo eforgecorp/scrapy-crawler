@@ -17,12 +17,12 @@ def get_articles(topic:str):
                 "body": f"{full_article.text}",
                 "publisher": f"{item['publisher']}",
             }
-            # adding every single in news array as a dictionary
+            # adding every single news in the news array as a dictionary
             news.append(singleNews)
         except:
             continue
         
-    # finally save all the news as json file
+    # finally saving all the news as json file
     with open(f'{topic}.json', 'w') as json_file:
         json.dump(news, json_file)
 
