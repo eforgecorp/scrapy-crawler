@@ -14,4 +14,4 @@ RUN DEBIAN_FRONTEND=noninteractive \
 RUN pip install --no-cache-dir -r requirements.txt
 RUN playwright install --with-deps chromium
 
-CMD ["scrapy", "crawl", "yahoo-finance", "--output", "articles.json", "--nolog"]
+CMD ["scrapy", "crawl", "yahoo-finance", "--nolog"]

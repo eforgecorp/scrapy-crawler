@@ -10,7 +10,16 @@ DOWNLOAD_HANDLERS = {
 }
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 PLAYWRIGHT_DEFAULT_NAVIGATION_TIMEOUT = 200 * 1000
-## settings.py
+
+FEED_FORMAT = 'json'
+FEED_URI = 'articles.json'
+FEEDS = {
+    'articles.json': {
+        'format': 'json',
+        'overwrite': True,
+    },
+}
+
 
 USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/109.0'
 
