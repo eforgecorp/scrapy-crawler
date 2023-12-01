@@ -1,0 +1,7 @@
+output.json
+articles.json
+.venv
+.env
+venv
+env
+virtualenv
