@@ -11,7 +11,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
 
 
 # Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install scrapy-playwright==0.0.33 playwright==1.40.0 Scrapy==2.11.0
 RUN playwright install --with-deps chromium
 
-CMD ["scrapy", "crawl", "yahoo-finance", "--nolog"]
+CMD ["scrapy", "crawl", "yahoo-finance"]
